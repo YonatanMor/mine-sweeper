@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #BF211E;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.board {
+    width: 700px;
+    height: 700px;
+    font-family: monospace;
+    color:black;
+    font-size: 40px;
+    text-align: center;
+}
+
+.mine {    
+    background-image: url('/img/bomb.png');
+    background-size: contain;
+    background-color: #E9CE2C;
+}
+
+.unknown {
+    background-color: #E9CE2C;
+    cursor: pointer;
+}
+
+.unknown:hover {
+    background-color: #ffe96b;
+}
+
+.revealed-cell {
+    background-color: #FBEA9D;
+}
+
+.flag {
+    background-image: url('/img/flag.png');
+    background-size: contain;
+}
+
+.size-4 {
+    background-color: rgb(80, 174, 80);
+}
+
+.size-8 {  
+    background-color: rgb(215, 215, 72);
+}
+
+.size-12 {
+    background-color: rgb(225, 78, 78);
+}
+
+.modal-overlay {
+    visibility: hidden;
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal {
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+    background: #E9CE2C;    
+    color:black;
+    width: 600px;
+    margin: 250px auto 0 auto;
+    padding: 40px;
+}
+
+.container {
+    margin: 10px auto;
+    width: 700px;
+
+}
+
+.controls {
+    position: relative;
+    margin-bottom: 20px;
+    font-size:16px;    
+}
+
+/* pad all immidiate children */
+.controls > * { 
+    padding: 10px;    
+}
+
+.controls button {
+    border: none;
+    font-size:20px;        
+}
+
+.controls .timer {
+    position:absolute;
+    right:0;
+    color:black;
+    background-color: #FBEA9D;    
+    display: inline-block;
+}
+
+
